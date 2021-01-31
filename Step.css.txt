@@ -1,0 +1,150 @@
+
+
+body{
+    background-color:#C0C0C0;
+   
+    
+}
+a{
+    color: gray;
+    font-family:sans-serif;
+    font-size: smaller;
+}
+.div1{
+ 
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: white;
+    float:left;
+    margin-right: 1px;
+    
+}
+.div2{
+
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+    float: left;
+    
+}
+.div3{
+    background-color:white;
+    width: 300px; 
+    height: outo ;
+    float: left;
+    
+}
+p{
+    font-family:"sans-serif";
+    font-size: smaller;
+}
+.button1
+{
+    
+    color:#C0C0C0;
+    border:1px solid gray;
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+    position: absolute;
+    
+    
+    
+}
+.button2
+{
+    
+    color:#C0C0C0;
+    border:1px solid white;
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+    position: absolute;
+    
+}
+.button3
+{
+    
+    color:#C0C0C0;
+    border:1px solid white;
+    width:100px;
+    height:30px;
+    border-radius: 30px;
+    left: 306px;
+    top: 300px;
+     
+}
+
+#text{
+    width: 250px; 
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #DCDCDC;
+    color: grey;
+}
+
+#password{
+    width: 250px; 
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #DCDCDC;
+    color: grey;
+}
+
+
+#mainContactname{
+    width: 250px; 
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #DCDCDC;
+    color: grey;
+}
+#email{
+    width: 250px; 
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #DCDCDC;
+    color: grey;
+}
+#confirmpassword{
+    width: 250px; 
+    height: 30px;
+    border-radius: 5px;
+    border:1px solid #DCDCDC;
+    color: grey;
+}
+
+
+.dropbtn {
+    color: white;
+    border:1px solid white;
+    background-color: white;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border:1px solid grey;
+    min-width: 50px;
+    width: 250px;
+    overflow: auto;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 5px 8px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
