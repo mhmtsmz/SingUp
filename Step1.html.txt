@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="step.css">
+</head>
+<body >
+<!-- ctrl + k + c -->
+<!-- Sayfalandırma Ve Bilgilendirme için açılan div'e ait kodlar -->
+   <div class="div1" style="width: 400px; height: 550px; margin-left: 14%; margin-top: 6%;">
+       <br> <br><br><br><br><br>
+       <div class="col-md-12" style="margin-left: 38%;">
+           <div>
+            <button class="button1" style="background-color:#6A5ACD; margin-top: 5%;">1</button>
+           </div>
+           <div>
+            <button class="button2" style="margin-top: 5%; margin-left: 3%;" >2</button>
+           </div>
+    </div>
+       <p style="text-align: center; margin-top: 150px;"><font size="4" font-family="sans-serif">Give us some basic information</font></p><br>
+       <p style="text-align: center;  color:gray; " > <font size="3" font-family="sans-serif">To start off. Please main contact name, email <br>adress and pasword</font></p>
+       </div>
+
+
+
+<!-- 1. Sayfada doldurulması istenilen textboxlara ait kodlar -->
+ <div class="div2" style="width: 700px; height: 550px; margin-top: 6%">
+
+    <p style="margin-top: 75px; margin-left: 50px;"> <font size="2" font-family="sans-serif">Step 1</font></p>
+    <div class="div3" style="  margin-left: 50px; " >
+
+     <form >
+       <div class="col-md-12">
+           <div class="col-md-6">
+      <a>Main Contact Name</a><br />
+      <input id="mainContactname" type="text" name="isim" size="36" autocomplete="off" placeholder=" eg. Johnsmith"><br /><br />
+    </div>
+    <div class="col-md-6">
+      <a>Password</a><br />
+      <input id="password" type="text" name="sifre" size="36"  autocomplete="off" placeholder=" Password must beat least 8 characters"><br /><br /><br /><br />
+    </div>
+</div>
+    </form>
+
+      <!-- continue butonuna ait kod satırı -->
+<form method="link" action="step2.html">
+    <input  class="button3" onclick="return step2()" style="color:white; width:80px; background-color:#6A5ACD;" type="submit" value="Continue">
+    </form>
+      
+    </div>
+
+
+
+    <div class="div3"> 
+
+        <a>Email Adress</a><br />
+        <input id="email" type="text" name="isim" size="36" autocomplete="off" placeholder=" eg. Johnsmith@mybusiness.com"><br /><br /> <br /> 
+      
+        <input id="confirmpassword" type="text" name="sifre" size="36" autocomplete="off"  placeholder=" Confirm Password"><br /><br /><br /><br />
+    
+    </div>
+</div>
+</body>
+<script>
+
+    // step1 de textboxlar doldurulmadan step2 ye geçmemesini sağlayan script kodu
+function step2(){
+    if(document.getElementById("mainContactname").value==""){
+        alert("Main Contact Name boş geçilemez.");
+        return false;
+    }
+     else if(document.getElementById("password").value==""){
+        alert("Password boş geçilemez.");
+        return false;
+    }
+    else if(document.getElementById("email").value==""){
+        alert("E-mail boş geçilemez.");
+        return false;
+    }else if(document.getElementById("confirmpassword").value==""){
+        alert("Lütfen şifrenizi tekrar giriniz.");
+        return false;
+    }
+    
+}
+</script>
+
+</html>
