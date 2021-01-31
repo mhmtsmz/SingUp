@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="step.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <!-- step2 deki Sayfalandırma Ve Bilgilendirme için açılan div'e ait kodlar -->
+   <div class="div1" style="width: 400px; height: 550px; margin-left: 14%; margin-top: 6%;">
+       <br> <br><br><br><br><br>
+       
+       <form method="link" action="step1.html">
+        <input class="button1" type="submit" style="background-color:#6A5ACD; margin-top: 5%; margin-left: 10%;"value="1">
+    </form>
+    
+       <button class="button2" style="background-color:#6A5ACD;margin-top: 5%; margin-left: 13%;" >2</button>
+    </from>
+       <p style="text-align: center; margin-top: 150px;"><font size="4" font-family="sans-serif">Complete your Registration</font></p>
+       <p style="text-align: center;  color:gray; " > <font size="3" font-family="sans-serif">Please enter business details.</font></p>
+       
+   </div>
+  
+   <!-- 2. Sayfada doldurulması istenilen textboxlara ait kodlar -->
+   <div class="div2" style="width: 700px; height: 550px; margin-top: 6%;">
+
+    <p style="margin-top: 75px; margin-left: 50px;"> <font size="2" font-family="sans-serif">Step 2</font></p>
+
+    <div style="  margin-left: 50px; ">
+        <a>Business Name (English)</a><br />
+      <input id="text" type="text" name="isim" style="width: 550px; " autocomplete="off" placeholder=" eg. Johnsmith"><br /><br />
+    </div>
+
+    <div class="div3" style="margin-left: 50px;" >
+      <a>Business Website</a><br />
+      <input id="text" type="text" name="isim" size="36" autocomplete="off" placeholder=" eg. mybusiness.com"><br /><br />
+      <a>Please Select Your Business Type</a><br />
+     
+      <!-- dropdown butonu için ayrılan kod satırı -->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn" id="text" style="width: 255px; height: 33px;"><font size="2" font-family="sans-serif" style="margin-left:-150px;">Please Select</font></button>
+        <div id="myDropdown" class="dropdown-content">
+          <a><font size="2" font-family="sans-serif">Sole Proprietorship</font></a>
+          <a><font size="2" font-family="sans-serif">General Partnership</font></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="div3"> 
+        <a>Main Phone Number</a><br />
+        <input id="text" type="text" name="isim" size="36" autocomplete="off" placeholder=" e.g. 658 0000 0000"><br /><br /> 
+        <a>Business Registration Number</a><br />
+        <input id="text" type="text" name="sifre" size="36"  autocomplete="off" placeholder=" e.g. 658 0000 0000"><br /><br /><br /><br />
+    </div>
+
+    <div style="margin-left: 50px;">
+        <a>Business Adress (English)</a><br />
+      <input id="text" type="text" name="isim" style="width: 550px; " autocomplete="off" placeholder=" eg. mybusiness.com"><br /><br />
+    </div>
+
+
+    <div style="margin-left: 50px;">
+    
+<form method="link" action="step1.html">
+    <input class="button3" type="submit" style="color:  gray; float: left; width:80px;"value="< Back">
+    
+    </form>
+    <button class="button3" style="color:white; background-color:#6A5ACD;">Confirm</button>
+    
+    </div>
+   </div>
+
+
+   <script>
+    //  dropdown butonuna ait script kodu
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
+</body>
+</html>
